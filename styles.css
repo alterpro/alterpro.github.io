@@ -25,7 +25,41 @@
 }
 .isaac-title{
     position: absolute; 
-    top: 30px; 
-    left: 30px;
+    margin-left: 40%;
+    margin-top: 10%;
+    left: 0;
+    top: 0;
     z-index: -1;
+    color: white;
+    font-size: 50;
+    text-shadow:
+    -2px -2px 0 #000,
+    2px -2px 0 #000,
+    -2px 2px 0 #000,
+    2px 2px 0 #000;  
+}
+.three-summary{
+    margin-top: 40;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+
+
+@media screen and (max-device-width: 600px) {
+    .isaac-title{
+    position: absolute; 
+    margin-left: 40%;
+    margin-top: 10%;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    color: white;
+    font-size: 30;
+    text-shadow:
+    -2px -2px 0 #000,
+    2px -2px 0 #000,
+    -2px 2px 0 #000,
+    2px 2px 0 #000;  
+}
 }
