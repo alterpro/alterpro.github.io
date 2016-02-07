@@ -1,3 +1,18 @@
+html,body {
+    height:100%;
+}
+.navbar .nav,
+.navbar .nav > li {
+  float:none;
+  display:inline-block;
+  *display:inline; /* ie7 fix */
+  *zoom:1; /* hasLayout ie7 trigger */
+  vertical-align: top;
+}
+.navbar-inner {
+  text-align:center;
+}
+
 .top-image {
     display: block;
     width: 100%;
@@ -5,10 +20,16 @@
     left: 0; 
     top: 0;
 }
+.collapse navbar-collapse {
+    text-align: center;
+}
 .nav-top-menu {
     display: block;
     height: 50px;
     width: 100%;
+}
+.navbar-default, .navbar-inverse {
+    text-align: center;
 }
 .portrait-img{
     width: 25%;
@@ -43,23 +64,28 @@
     margin-left: 10%;
     margin-right: 10%;
 }
-
+.page-footer-container {
+    background-color: gray;
+    height: 100%;
+    box-shadow: 0px -1px 1px #000000;
+}
 
 
 @media screen and (max-device-width: 600px) {
-    .isaac-title{
-    position: absolute; 
-    margin-left: 40%;
-    margin-top: 10%;
-    left: 0;
-    top: 0;
-    z-index: -1;
-    color: white;
-    font-size: 30;
-    text-shadow:
-    -2px -2px 0 #000,
-    2px -2px 0 #000,
-    -2px 2px 0 #000,
-    2px 2px 0 #000;  
-}
+    .isaac-title
+    {
+        position: absolute;
+        margin-left: 40%;
+        margin-top: 10%;
+        left: 0;
+        top: 0;
+        z-index: -1;
+        color: white;
+        font-size: 30;
+        text-shadow:
+        -2px -2px 0 #000,
+        2px -2px 0 #000,
+        -2px 2px 0 #000,
+        2px 2px 0 #000;
+    }
 }
